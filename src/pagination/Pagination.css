@@ -21,13 +21,36 @@
     flex-wrap: wrap;
 }
 
-.page-number {
-    padding: 10px;
-    margin: 2px;
-    border: 1px solid black;
-    cursor: pointer;
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0;
 }
 
-.pagination-container {
-    padding: 20px;
+.page-number {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 0 2px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border: 1px solid #ddd;
+}
+
+.page-number:hover {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.page-number.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  font-weight: bold;
 }
